@@ -1,0 +1,148 @@
+    body {
+        font-family: 'Lato', sans-serif;
+        margin: 0;
+    }
+    
+    .pdm {
+        height: 400px;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        justify-self: center;
+    }
+    
+    .pdm img {
+        justify-content: center;
+        justify-self: center;
+    }
+    
+    .card {
+        background-color: white;
+        color: black;
+        opacity: 0.6;
+    }
+    
+    .hero {
+        background-color: white;
+        color: black;
+        padding: 32px 15px;
+        display: grid;
+        grid-template-columns: minmax(auto, 1024px);
+        justify-content: center;
+    }
+    
+    .hero-container {
+        display: grid;
+        grid-template-columns: 70px 1fr 320px;
+        grid-template-areas: "badge title form" ". description form" ". countdown form";
+        grid-gap: 10px;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .title {
+        grid-area: title;
+        font-size: 36px;
+        font-weight: normal;
+        color: #101e70;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    
+    .form {
+        grid-area: form;
+        text-align: center;
+        padding: 1.5em;
+        border-radius: 10px;
+    }
+    
+    p {
+        margin: 0;
+    }
+    
+    .description {
+        grid-area: description;
+        color: black;
+        font-size: 20px;
+        justify-content: stretch;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .hero-container {
+            grid-template-columns: 70px 1fr;
+            grid-template-areas: "badge title" "description description" "form form";
+        }
+    }
+    
+    .work {
+        display: grid;
+        grid-template-columns: 1fr;
+        color: white;
+        background-color: #101e70;
+       
+    }
+    
+    .title-work {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+    }
+    
+    .post-list {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(100px, 293px));
+        grid-gap: 30px;
+        justify-content: center;
+    }
+    
+    .post {
+        cursor: pointer;
+        position: relative;
+        display: block;
+        justify-content: center;
+    }
+    
+    .post-image {
+        margin: 0;
+    }
+    
+    .post-image img {
+        width: 100%;
+        vertical-align: top;
+    }
+    
+    .post-overlay {
+        background: rgba(0, 0, 0, .4);
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+    }
+    
+    .post:hover .post-overlay {
+        display: flex;
+    }
+    
+    .post-likes,
+    .post-comments {
+        width: 80px;
+        margin: 5px;
+        font-weight: bold;
+        text-align: center;
+        display: inline-block;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .post-list {
+            grid-gap: 3px;
+        }
+    }

@@ -1,0 +1,21 @@
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.nav-logo-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    justify-self: center;
+}
+
+.nav-link {
+    color:#101e70;
+    font-size: 18px;
+}
+
+.navbar-collapse {
+    justify-items: end;
+    justify-self: end;
+}
