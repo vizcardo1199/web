@@ -1,3 +1,17 @@
+
+.card {
+    background-color: white;
+    color: black;
+    opacity: 0.6;
+}
+
+
+.lead{
+    justify-content: stretch;
+    font-size: 20px;
+    color: black;
+}
+
 .blogs-main {
     display: grid;
 }

@@ -1,6 +1,7 @@
 nav {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 100px 1fr;
+
 }
 
 .nav-logo-container {
@@ -11,11 +12,16 @@ nav {
 }
 
 .nav-link {
-    color:#101e70;
+    color: #101e70;
     font-size: 18px;
 }
 
 .navbar-collapse {
     justify-items: end;
     justify-self: end;
+}
+
+.desplegable {
+    justify-items: start;
+    justify-self: start;
 }

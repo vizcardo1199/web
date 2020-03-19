@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 //declare var $: any;
 
 @Component({
@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 
 })
 export class HomeComponent implements OnInit {
-
 
   ngOnInit(){
 

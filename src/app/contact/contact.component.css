@@ -43,7 +43,11 @@ body {
     padding: 1.5em;
     border-radius: 10px;
 }
-
+.card {
+    background-color: white;
+    color: black;
+    opacity: 0.6;
+}
 .form input {
     width: 100%;
     padding: 10px;
